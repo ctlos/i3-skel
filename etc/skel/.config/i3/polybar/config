@@ -194,6 +194,7 @@ type = custom/script
 exec = ~/.config/i3/polybar/status tor
 interval = 6
 format = <label>
+format-prefix = "󰦝 "
 # format-padding = 1
 click-left = "systemctl restart tor"
 click-right = "systemctl stop tor"
@@ -210,7 +211,7 @@ label-maxlen = 20
 
 [module/term]
 type = custom/text
-content = 
+content = 
 content-foreground = ${colors.primary}
 click-left = xfce4-terminal &
 click-right = xfce4-terminal -e htop &
@@ -219,7 +220,7 @@ click-right = xfce4-terminal -e htop &
 
 [module/app]
 type = custom/text
-content = 
+content = 
 content-foreground = ${colors.primary}
 click-left = rofi -modi run,drun -show drun -location 1 -xoffset 15 -yoffset 39 -line-padding 4 -columns 1 -width 25 -lines 10 -padding 15 -hide-scrollbar -show-icons -drun-icon-theme
 
@@ -255,7 +256,7 @@ label = %percentage%%
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${colors.primary}
 label = %percentage_used%%
 
@@ -302,7 +303,7 @@ label = %layout%
 
 [module/power]
 type = custom/text
-content = 
+content = 
 content-foreground = ${colors.primary}
 click-left = ~/.config/i3/polybar/power
 
