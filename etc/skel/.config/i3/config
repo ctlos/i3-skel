@@ -60,7 +60,7 @@ mode "$mode_gaps_outer" {
 set $mod Mod4
 set $mod1 Mod1
 
-font pango:ClearSansMedium 10
+font pango:ClearSansMedium 11
 
 floating_modifier $mod
 
